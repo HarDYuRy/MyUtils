@@ -14,7 +14,7 @@ public class MyUtils {
     public static boolean esPrimer(int n) {
         if (n <= 1) return false;
         for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i != 0) return false;
+            if (n % i == 0) return false;
         }
         return true;
     }
@@ -25,6 +25,7 @@ public class MyUtils {
         for (int i = 2; i <= n; i++) res *= i;
         return res;
         // Recursivament és més elegant pero així és millor. Comentari afegit per fer justificar un commit
+        //He creado este comentario para comprovar
     }
 }
 
