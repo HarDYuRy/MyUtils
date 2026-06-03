@@ -14,7 +14,7 @@ public class MyUtils {
     public static boolean esPrimer(int n) {
         if (n <= 1) return false;
         for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i != 0) return false;
+            if (n % i == 0) return false;
         }
         return true;
     }
